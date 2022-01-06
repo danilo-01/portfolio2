@@ -57,6 +57,7 @@ const Portfolio = () => {
           {list.map((item) => (
             <PortfolioList
               id={item.id}
+              key={item.id}
               title={item.title}
               active={selected === item.id}
               setSelected={setSelected}
