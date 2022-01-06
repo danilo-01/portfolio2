@@ -18,9 +18,16 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: $scrSmall) {
+    }
+
     h2 {
       font-size: $secHead;
       color: $textLight;
+
+      @media screen and (max-width: $scrSmall) {
+        font-size: $smallSecHead;
+      }
     }
 
     form {
@@ -32,6 +39,10 @@
       height: 80%;
       font-size: $smallText;
       color: $textLight;
+
+      @media screen and (max-width: $scrSmall) {
+        width: 90%;
+      }
 
       span {
         width: 80%;
@@ -53,6 +64,10 @@
         font-size: inherit;
         color: inherit;
         outline: none;
+
+        @media screen and (max-width: $scrSmall) {
+          width: 90%;
+        }
 
         &:hover {
           border-left: 3px solid $mainColor;
@@ -82,6 +97,10 @@
         resize: none;
         outline: none;
 
+        @media screen and (max-width: $scrSmall) {
+          width: 90%;
+        }
+
         &:hover {
           border-left: 3px solid $mainColor;
           box-shadow: -10px 10px 0 rgba(0, 0, 0, 0.5);
@@ -99,6 +118,10 @@
         transition: all 0.1s ease-in;
         font-size: 17px;
         overflow: hidden;
+
+        @media screen and (max-width: $scrSmall) {
+          width: 90%;
+        }
 
         &:hover {
           top: -2px;

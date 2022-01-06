@@ -8,6 +8,10 @@
   background-size: 400px;
   background-attachment: fixed;
 
+  @media screen and (max-width: $scrSmall) {
+    flex-direction: column;
+  }
+
   .left {
     flex: 0.5;
     position: relative;
@@ -19,16 +23,28 @@
     text-align: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 
+    @media screen and (max-width: $scrSmall) {
+      flex: 100%;
+    }
     h2 {
       font-size: $secHead;
-      margin: auto 0;
+      margin: auto 0 0 0;
+
+      @media screen and (max-width: $scrSmall) {
+        font-size: $smallSecHead;
+        margin: auto 0 0 0;
+      }
     }
 
     p {
-      font-size: 30px;
+      font-size: 25px;
       margin: 0 20px;
       width: 70%;
       margin: auto 0;
+
+      @media screen and (max-width: $scrSmall) {
+        font-size: 20px;
+      }
     }
 
     a {
@@ -40,6 +56,13 @@
       border-radius: 4px;
       margin: auto 0;
       transition: all 0.5s ease;
+      font-size: 30px;
+      margin: 0 0 auto 0;
+
+      @media screen and (max-width: $scrSmall) {
+        font-size: 30px;
+        margin: 0 0 auto 0;
+      }
 
       &:hover {
         background-color: $secColor;
@@ -50,6 +73,10 @@
 
   .right {
     flex: 0.5;
+
+    @media screen and (max-width: $scrSmall) {
+      display: none;
+    }
 
     .imageContainer {
       width: 100%;

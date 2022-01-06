@@ -10,7 +10,7 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    window.location.href = `mailto:${data.email}?subject=${data.subject}&body=${data.message}`;
+    window.location.href = `mailto:danilo.01@live.com?subject=${data.subject}&body=${data.message}`;
   };
 
   return (

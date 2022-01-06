@@ -8,9 +8,14 @@
   background-size: 400px;
   background-attachment: fixed;
 
+  @media screen and (max-width: $scrSmall) {
+    flex-direction: column;
+  }
+
   .left {
     flex: 0.5;
     overflow: hidden;
+    display: block;
 
     .imgContainer {
       width: 700px;
@@ -25,6 +30,10 @@
 
       img {
         width: 70%;
+      }
+
+      @media screen and (max-width: $scrSmall) {
+        display: none;
       }
     }
   }
@@ -93,6 +102,10 @@
           opacity: 0;
         }
       }
+    }
+
+    @media screen and (max-width: $scrSmall) {
+      flex: 100%;
     }
   }
 }

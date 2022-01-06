@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import PortfolioList from "../PortfolioList/PortfolioList";
 import "./portfolio.scss";
 import portfolios from "../portfolioData";
@@ -7,6 +7,7 @@ import portfolios from "../portfolioData";
 const Portfolio = () => {
   const [selected, setSelected] = useState("frontend");
   const [data, setData] = useState([]);
+  const [size, setSize] = useState({ windowWidth: window.innerWidth });
 
   const list = [
     {
@@ -38,6 +39,14 @@ const Portfolio = () => {
         setData(portfolios.frontend);
         break;
     }
+
+    const handleResize = (e) => {
+      if (size < 830) {
+      }
+      setSize({ windowWidth: window.innerWidth });
+    };
+
+    const resizeListener = window.addEventListener("resize", handleResize);
   }, [selected]);
 
   return (

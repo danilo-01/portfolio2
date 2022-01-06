@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./intro.scss";
 import { AiFillCaretDown } from "react-icons/ai";
 import { init } from "ityped";
 
 const Intro = () => {
   const textRef = useRef();
+
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
@@ -24,6 +25,7 @@ const Intro = () => {
           <img src="assets/portrait.png" alt="" />
         </div>
       </div>
+
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
