@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: lightblue;
+  display: flex;
+
+  // .left {
+  //   flex: 0.4;
+  // }
+
+  .right {
+    // flex: 0.6;
+    width: 100%;
+    background-color: $fourColor;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: $secHead;
+      color: $textLight;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 80%;
+      font-size: $smallText;
+      color: $textLight;
+
+      span {
+        width: 80%;
+        text-align: start;
+        margin: 10px 0;
+        color: #e6e321;
+      }
+
+      input {
+        width: 80%;
+        background: none;
+        border: none;
+        height: 40px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $mainColor;
+        border-left: 1px solid $mainColor;
+        transition: all 0.2s ease;
+        font-size: inherit;
+        color: inherit;
+        outline: none;
+
+        &:hover {
+          border-left: 3px solid $mainColor;
+          box-shadow: -10px 10px 0 rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 90px $fourColor inset !important;
+        -webkit-text-fill-color: $textLight !important;
+      }
+
+      textarea {
+        width: 80%;
+        background: none;
+        border: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $mainColor;
+        border-left: 1px solid $mainColor;
+        transition: all 0.2s ease;
+        font-size: inherit;
+        color: inherit;
+        resize: none;
+        outline: none;
+
+        &:hover {
+          border-left: 3px solid $mainColor;
+          box-shadow: -10px 10px 0 rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      button {
+        position: relative;
+        width: 80%;
+        height: 40px;
+        padding: 10px;
+        background-color: $mainColor;
+        border: none;
+        top: 0;
+        transition: all 0.1s ease-in;
+        font-size: 17px;
+        overflow: hidden;
+
+        &:hover {
+          top: -2px;
+        }
+      }
+    }
+  }
+}

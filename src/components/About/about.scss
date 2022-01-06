@@ -1,0 +1,62 @@
+@import "../../global.scss";
+
+.about {
+  background-color: $dark;
+  display: flex;
+  color: $textLight;
+  background-color: $secColor;
+  background-size: 400px;
+  background-attachment: fixed;
+
+  .left {
+    flex: 0.5;
+    position: relative;
+    background-color: $fourColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+    h2 {
+      font-size: $secHead;
+      margin: auto 0;
+    }
+
+    p {
+      font-size: 30px;
+      margin: 0 20px;
+      width: 70%;
+      margin: auto 0;
+    }
+
+    a {
+      background-color: $mainColor;
+      padding: 10px 20px;
+      margin-top: 40px;
+      text-decoration: none;
+      color: $textDark;
+      border-radius: 4px;
+      margin: auto 0;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: $secColor;
+        color: $textLight;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+
+    .imageContainer {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

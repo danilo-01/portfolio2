@@ -1,0 +1,98 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: $thiColor;
+  display: flex;
+  color: $textLight;
+  // background-image: url("../../../public/assets/hw.png");
+  background-size: 400px;
+  background-attachment: fixed;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      background-color: $mainColor;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      overflow: hidden;
+      float: right;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    position: relative;
+    background-color: $fourColor;
+    box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.3);
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+      }
+
+      h2 {
+        font-size: 35px;
+      }
+
+      h3 {
+        font-size: 30px;
+
+        span {
+          font-size: inherit;
+          color: $mainColor;
+        }
+
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+      color: $mainColor;
+
+      svg {
+        width: 40px;
+        height: 40px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
