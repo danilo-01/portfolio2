@@ -1,10 +1,9 @@
 @import "../../global.scss";
 
 .about {
-  background-color: $dark;
+  background-color: $thiColor;
   display: flex;
   color: $textLight;
-  background-color: $secColor;
   background-size: 400px;
   background-attachment: fixed;
 
@@ -60,7 +59,7 @@
       padding: 10px 20px;
       margin-top: 40px;
       text-decoration: none;
-      color: $textDark;
+      color: $textLight;
       border-radius: 4px;
       margin: auto 0;
       transition: all 0.5s ease;
