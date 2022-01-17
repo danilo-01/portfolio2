@@ -7,7 +7,13 @@ const portfolios = {
       link: "https://github.com/danilo-01/vanillajs-chess",
     },
     {
-      id: 1,
+      id: 2,
+      title: "Lights Out",
+      img: "assets/lightsOut.png",
+      link: "https://github.com/danilo-01/Lights-Out",
+    },
+    {
+      id: 3,
       title: "Meme Generator (old)",
       img: "assets/memeGen.png",
       link: "https://github.com/danilo-01/meme-generator",
