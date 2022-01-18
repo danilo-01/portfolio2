@@ -12,5 +12,15 @@
   &.active {
     background-color: $mainColor;
     color: $textDark;
+
+    &:hover {
+      background-color: $mainColor;
+      color: $textDark;
+    }
+  }
+
+  &:hover {
+    background-color: $thiColor;
+    color: $textLight;
   }
 }

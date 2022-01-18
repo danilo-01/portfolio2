@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./about.scss";
+import { init } from "ityped";
 
 const About = () => {
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      strings: ["ABOUT ME"],
+    });
+  }, []);
   return (
     <div id="about" className="about">
       <div className="left">
-        <h2>ABOUT ME</h2>
+        <h2>
+          <span ref={textRef}></span>
+        </h2>
         <p>
           Hello! My name is Danilo Costilla (dah-knee-low kow-stee-yah) and I am
           a fullstack software engineer. I got my education from Springboard's

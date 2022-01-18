@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./intro.scss";
 import { AiFillCaretDown } from "react-icons/ai";
 import { init } from "ityped";

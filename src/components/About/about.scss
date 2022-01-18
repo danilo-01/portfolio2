@@ -17,17 +17,22 @@
     background-color: $fourColor;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    text-align: center;
+    text-align: start;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 50px 20px 50px 50px;
 
     @media screen and (max-width: $scrSmall) {
       flex: 100%;
+      padding-left: 0px;
+      align-items: center;
+      text-align: center;
     }
     h2 {
       font-size: $secHead;
       margin: auto 0 0 0;
+      padding: 0px 10px;
 
       @media screen and (max-width: $scrSmall) {
         font-size: $smallSecHead;
@@ -55,14 +60,18 @@
     }
 
     a {
-      background-color: $mainColor;
-      padding: 10px 20px;
+      position: relative;
+      left: 0;
+      // background-color: $mainColor;
+
       margin-top: 40px;
       text-decoration: none;
       color: $textLight;
       border-radius: 4px;
       margin: auto 0;
-      transition: all 0.5s ease;
+      border-left: 0px solid $mainColor;
+      border-right: 0px solid $mainColor;
+      transition: all 0.2s ease;
       font-size: 30px;
       margin: 0 0 auto 0;
 
@@ -72,8 +81,7 @@
       }
 
       &:hover {
-        background-color: $secColor;
-        color: $textLight;
+        left: 10px;
       }
     }
   }
