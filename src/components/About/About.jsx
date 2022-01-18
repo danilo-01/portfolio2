@@ -17,7 +17,7 @@ const About = () => {
           music production, putting together LEGO's and gardeing. Feel free to
           reach out if you would like to work together or just want to connect!
         </p>
-        <a classname="button" href="#contact">
+        <a className="button" href="#contact">
           Contact Me
         </a>
       </div>

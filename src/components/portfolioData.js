@@ -22,7 +22,7 @@ const portfolios = {
 
   backend: [
     {
-      id: 1,
+      id: 4,
       title: "React Chess (backend)",
       img: "assets/reactChessBackend.png",
       link: "https://github.com/danilo-01/react-chess-backend",
@@ -31,13 +31,13 @@ const portfolios = {
 
   fullstack: [
     {
-      id: 1,
+      id: 5,
       title: "Python App (old)",
       img: "assets/pyApp.png",
       link: "https://cap1-danilo-01.herokuapp.com/signup",
     },
     {
-      id: 2,
+      id: 6,
       title: "Pokemon Lookup (old)",
       img: "assets/pokemonApp.png",
       link: "https://pokeconnect-capstone.herokuapp.com/login",
