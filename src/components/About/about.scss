@@ -21,7 +21,6 @@
     justify-content: center;
     text-align: start;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    padding: 50px 20px 50px 50px;
 
     @media screen and (max-width: $scrSmall) {
       flex: 100%;
@@ -32,7 +31,7 @@
     h2 {
       font-size: $secHead;
       margin: auto 0 0 0;
-      padding: 0px 10px;
+      padding: 0px 100px;
 
       @media screen and (max-width: $scrSmall) {
         font-size: $smallSecHead;
@@ -42,16 +41,24 @@
 
     p {
       font-size: 25px;
-      margin: 0 20px;
       width: 70%;
       margin: auto 0;
+      padding: 0px 100px;
 
       a {
+        position: relative;
         color: $mainColor;
         background: none;
         padding: 2px;
         margin: 2px;
         font-size: 25px;
+        left: 0;
+        top: 0;
+
+        &:hover {
+          left: 0;
+          top: -1px;
+        }
       }
 
       @media screen and (max-width: $scrSmall) {
@@ -63,7 +70,7 @@
       position: relative;
       left: 0;
       // background-color: $mainColor;
-
+      padding: 0px 100px;
       margin-top: 40px;
       text-decoration: none;
       color: $textLight;
