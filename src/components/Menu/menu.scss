@@ -42,4 +42,28 @@
       }
     }
   }
+
+  .links {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+
+    a {
+      margin: 10px;
+
+      svg {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+        color: $textDark;
+        transition: all 0.15s ease-in;
+
+        &:hover {
+          top: -5px;
+        }
+      }
+    }
+  }
 }

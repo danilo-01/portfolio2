@@ -1,6 +1,7 @@
 import React from "react";
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -17,6 +18,16 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           <div className="itemContainer">
             <Mail className="icon" />
             <span>danilo.01@live.com</span>
+          </div>
+          <div className="itemContainer">
+            <a href="https://github.com/danilo-01/">
+              <AiFillGithub />
+            </a>
+          </div>
+          <div className="itemContainer">
+            <a href="https://www.linkedin.com/in/danilo-costilla-19554b16a/">
+              <AiFillLinkedin />
+            </a>
           </div>
         </div>
 

@@ -50,6 +50,19 @@
           font-size: 15px;
           font-weight: 500;
         }
+
+        svg {
+          position: relative;
+          width: 30px;
+          height: 30px;
+          top: 0px;
+          color: $textLight;
+          transition: all 0.15s ease-in;
+
+          &:hover {
+            top: -5px;
+          }
+        }
       }
     }
 
@@ -93,6 +106,14 @@
         &:last-child {
           background-color: $textDark;
           transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .wrapper {
+      .left {
+        svg {
+          color: $textDark;
         }
       }
     }

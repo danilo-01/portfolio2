@@ -8,12 +8,18 @@ const portfolios = {
     },
     {
       id: 2,
+      title: "React Chess",
+      img: "assets/reactChess.png",
+      link: "https://github.com/danilo-01/React-Chess-Frontend",
+    },
+    {
+      id: 3,
       title: "Lights Out",
       img: "assets/lightsOut.png",
       link: "https://github.com/danilo-01/Lights-Out",
     },
     {
-      id: 3,
+      id: 4,
       title: "Meme Generator (old)",
       img: "assets/memeGen.png",
       link: "https://github.com/danilo-01/meme-generator",
@@ -23,7 +29,7 @@ const portfolios = {
   backend: [
     {
       id: 4,
-      title: "React Chess (backend)",
+      title: "React Chess (API)",
       img: "assets/reactChessBackend.png",
       link: "https://github.com/danilo-01/react-chess-backend",
     },
