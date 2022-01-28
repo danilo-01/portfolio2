@@ -10,7 +10,7 @@ const portfolios = {
       id: 2,
       title: "React Chess",
       img: "assets/reactChess.png",
-      link: "https://github.com/danilo-01/React-Chess-Frontend",
+      link: "https://react-chess-frontend.herokuapp.com/",
     },
     {
       id: 3,
