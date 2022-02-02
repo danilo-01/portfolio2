@@ -15,7 +15,9 @@
   .left {
     flex: 0.5;
     overflow: hidden;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
 
     .imgContainer {
       width: 700px;
@@ -52,13 +54,25 @@
       flex-direction: column;
       justify-content: center;
 
+      @media screen and (max-width: $scrSmall) {
+        padding-left: 5%;
+      }
+
       h1 {
         font-size: 60px;
         margin: 10px 0;
+
+        @media screen and (max-width: $scrSmall) {
+          font-size: 50px;
+        }
       }
 
       h2 {
         font-size: 35px;
+
+        @media screen and (max-width: $scrSmall) {
+          font-size: 30px;
+        }
       }
 
       h3 {

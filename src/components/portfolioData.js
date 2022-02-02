@@ -1,28 +1,22 @@
 const portfolios = {
   frontend: [
-    {
-      id: 1,
-      title: "Vanilla JS Chess",
-      img: "assets/vanillaChess.png",
-      link: "https://github.com/danilo-01/vanillajs-chess",
-    },
+    // {
+    //   id: 1,
+    //   title: "Vanilla JS Chess",
+    //   img: "assets/vanillaChess.png",
+    //   link: "https://github.com/danilo-01/vanillajs-chess",
+    // },
     {
       id: 2,
-      title: "React Chess",
+      title: "React Chess (Front-end)",
       img: "assets/reactChess.png",
       link: "https://react-chess-frontend.herokuapp.com/",
     },
     {
       id: 3,
-      title: "Lights Out",
+      title: "Lights Out (old)",
       img: "assets/lightsOut.png",
       link: "https://github.com/danilo-01/Lights-Out",
-    },
-    {
-      id: 4,
-      title: "Meme Generator (old)",
-      img: "assets/memeGen.png",
-      link: "https://github.com/danilo-01/meme-generator",
     },
   ],
 
@@ -35,20 +29,7 @@ const portfolios = {
     },
   ],
 
-  fullstack: [
-    {
-      id: 5,
-      title: "Python App (old)",
-      img: "assets/pyApp.png",
-      link: "https://cap1-danilo-01.herokuapp.com/signup",
-    },
-    {
-      id: 6,
-      title: "Pokemon Lookup (old)",
-      img: "assets/pokemonApp.png",
-      link: "https://pokeconnect-capstone.herokuapp.com/login",
-    },
-  ],
+  fullstack: [],
 };
 
 export default portfolios;

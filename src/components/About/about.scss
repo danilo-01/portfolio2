@@ -13,82 +13,113 @@
 
   .left {
     flex: 0.5;
-    position: relative;
     background-color: $fourColor;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     text-align: start;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 
+    // Tablets
+    @media screen and (max-width: 1400px) {
+    }
+
+    // Phones
     @media screen and (max-width: $scrSmall) {
       flex: 100%;
-      padding-left: 0px;
       align-items: center;
       text-align: center;
     }
-    h2 {
-      font-size: $secHead;
-      margin: auto 0 0 0;
-      padding: 0px 100px;
 
-      @media screen and (max-width: $scrSmall) {
-        font-size: $smallSecHead;
+    .wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: start;
+      width: 85%;
+
+      h2 {
+        font-size: $secHead;
         margin: auto 0 0 0;
-      }
-    }
 
-    p {
-      font-size: 25px;
-      width: 70%;
-      margin: auto 0;
-      padding: 0px 100px;
+        // Tablets
+        @media screen and (max-width: 1400px) {
+          font-size: 40px;
+        }
 
-      a {
-        position: relative;
-        color: $mainColor;
-        background: none;
-        padding: 2px;
-        margin: 2px;
-        font-size: 25px;
-        left: 0;
-        top: 0;
-
-        &:hover {
-          left: 0;
-          top: -1px;
+        // Phones
+        @media screen and (max-width: $scrSmall) {
+          font-size: $smallSecHead;
+          margin: 10px 0;
         }
       }
 
-      @media screen and (max-width: $scrSmall) {
-        font-size: 20px;
+      p {
+        font-size: 25px;
+        width: 70%;
+        margin: auto 0;
+
+        a {
+          position: relative;
+          color: $mainColor;
+          background: none;
+          padding: 2px;
+          margin: 2px;
+          font-size: 25px;
+          left: 0;
+          top: 0;
+
+          // Tablets
+          @media screen and (max-width: 1400px) {
+            font-size: 15px;
+          }
+
+          &:hover {
+            left: 0;
+            top: -1px;
+          }
+        }
+        // Tablets
+        @media screen and (max-width: 1400px) {
+          font-size: 15px;
+        }
+
+        // Phones
+        @media screen and (max-width: $scrSmall) {
+          width: 90%;
+          font-size: 20px;
+        }
       }
-    }
 
-    a {
-      position: relative;
-      left: 0;
-      // background-color: $mainColor;
-      padding: 0px 100px;
-      margin-top: 40px;
-      text-decoration: none;
-      color: $textLight;
-      border-radius: 4px;
-      margin: auto 0;
-      border-left: 0px solid $mainColor;
-      border-right: 0px solid $mainColor;
-      transition: all 0.2s ease;
-      font-size: 30px;
-      margin: 0 0 auto 0;
+      a {
+        position: relative;
+        left: 0;
+        // background-color: $mainColor;
 
-      @media screen and (max-width: $scrSmall) {
+        margin-top: 40px;
+        text-decoration: none;
+        color: $textLight;
+        border-radius: 4px;
+        margin: auto 0;
+        border-left: 0px solid $mainColor;
+        border-right: 0px solid $mainColor;
+        transition: all 0.2s ease;
         font-size: 30px;
         margin: 0 0 auto 0;
-      }
 
-      &:hover {
-        left: 10px;
+        @media screen and (max-width: $scrSmall) {
+          font-size: 30px;
+          margin: 0 0 auto 0;
+        }
+
+        &:hover {
+          left: 10px;
+
+          @media screen and (max-width: $scrSmall) {
+            left: 0px;
+          }
+        }
       }
     }
   }
